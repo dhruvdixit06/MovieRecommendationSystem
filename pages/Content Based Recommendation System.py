@@ -12,7 +12,6 @@ def decompress_pickle(file):
 similarity = decompress_pickle('pickle/similarity_content.pbz2') 
 model = load(open('pickle/movies_content_dict.pkl','rb'))
 
-
 movies = pd.DataFrame(model)
 title_list=movies['title']
 movies_names=[]
@@ -32,6 +31,6 @@ selected_movie_name = st.selectbox(
 movies['title'].values
 )
 if st.button('Show Recommendation'):
-    output= recommend("Toy Story")
+    output= recommend(selected_movie_name)
     for i in output:
         st.text(i)
