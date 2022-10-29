@@ -10,7 +10,7 @@ st.markdown(about,unsafe_allow_html=True)
 
 st.header('Developers:')
 d='''
-Made with ❤️ by :
+Made with ❤️ by :\n
 Dhruv Dixit \n
 Dhreeti Kesharwani \n
 Erram Prithvi Raj \n
